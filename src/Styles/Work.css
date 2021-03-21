@@ -1,0 +1,12 @@
+.work-container{
+    padding: 1rem 1rem;
+}
+.work-container div{
+    padding: 0.4rem 0.4rem;
+}
+.work-container h4{
+    color: rgb(228, 118, 118);
+}
+.work-container .date{
+    font-size: 0.8rem;
+}

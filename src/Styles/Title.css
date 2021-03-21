@@ -1,0 +1,33 @@
+.Title{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.Title::after{
+    content: "";
+    background-color: rgba(0, 0, 255, 0.473);
+    width: 11rem;
+    height: 0.3rem;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.Title::before{
+    content: "";
+    background-color: blue;
+    width: 4rem;
+    height: 0.3rem;
+    left: 0;
+    bottom: 0;
+    position:absolute;
+}
+.Title span{
+    color: blue;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    font-size: 3rem;
+    opacity: 0.2;
+}
