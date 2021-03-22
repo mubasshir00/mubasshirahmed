@@ -10,5 +10,35 @@ td, th {
     list-style: none;
 }
 .cert-container a{
-    color: white;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+@media screen and (max-width:660px){
+    .cerContainer .Title{
+        font-size: 0.7rem;
+    }
+    td, th{
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:360px){
+    /* td, th{
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    } */
+    .cerContainer .Title{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:360px){
+    .cerContainer .Title{
+        padding-right: 0.6rem;
+    }
+    .nav-btn{
+        width: 1rem;
+        right: 1%;
+    }
 }

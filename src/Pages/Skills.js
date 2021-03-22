@@ -4,7 +4,7 @@ import Title from '../Components/Title'
 
 const Skills = () => {
     return (
-        <div>
+        <div className="skillXyz">
             <Title title={'My Skills'} span={'My Skills'} />
             <div className="skillsContainer">
                 <SkillsCom skill={'ReactJS'} progress={'60%'} width={'60%'} />
@@ -12,17 +12,17 @@ const Skills = () => {
                     progress={'70%'} />
                 <SkillsCom skill={'Javascript'} progress={'60%'} width={'60%'}/>
                 <SkillsCom skill={'HTML'}
-                progress={'80%'}/>
+                progress={'80%'} width={'80%'}/>
                 <SkillsCom skill={'CSS'}
-                progress={'80%'} />
+                    progress={'80%'} width={'80%'}/>
                 <SkillsCom skill={'C++'}
-                progress={'80%'} />
+                    progress={'80%'} width={'80%'} />
                 <SkillsCom skill={'SQL'}
-                    progress={'30%'} />
+                    progress={'30%'} width={'80%'}/>
                 <SkillsCom skill={'Python'}
-                    progress={'30%'} />
+                    progress={'30%'} width={'80%'}/>
                 <SkillsCom skill={'Ubuntu'}
-                    progress={'80%'} />
+                    progress={'80%'} width={'80%'}/>
                 
             </div>
         </div>

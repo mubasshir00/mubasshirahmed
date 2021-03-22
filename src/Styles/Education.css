@@ -1,6 +1,31 @@
+h3,h2{
+    color: red;
+}
 .name{
     padding: 2rem 2rem;
 }
 .coursework{
     padding: 2rem 2rem;
 }
+
+@media screen and (max-width:700px){
+    .EducationPage .Title{
+        font-size: 0.8rem;
+        padding-left: 0.1rem;
+    }
+    .name{
+        font-size: 0.7rem;
+    }
+    .coursework{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width:400px){
+    .name{
+        padding: 0.5rem 0.1rem;
+    }
+    .coursework{
+        padding: 0.5rem 0.1rem;
+    }
+}
+

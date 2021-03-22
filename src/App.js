@@ -13,13 +13,25 @@ import Project from './Pages/Project';
 import Certifications from './Pages/Certifications';
 import Contact from './Pages/Contact';
 import ParticleBackground from './Components/ParticleBackground';
+import { useState } from 'react';
 
 function App() {
+  const [navToggle, setnavToggle] = useState(false);
+  const navHandler = () => {
+    setnavToggle(!navToggle)
+  }
   return (
   
     <div className="App">
-      <div className="side-bar">
-        <NavBar />
+      <div className="test">
+        <div className={`side-bar ${navToggle ? 'nav-toggle' : ''}`}>
+          <NavBar />
+        </div>
+        <div className="nav-btn" onClick={navHandler}>
+          <div className="lines lines-1"></div>
+          <div className="lines lines-2"></div>
+          <div className="lines lines-3"></div>
+        </div>
       </div>
       <div className="main-content">
         {/* <ParticleBackground /> */}

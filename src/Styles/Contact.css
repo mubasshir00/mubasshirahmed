@@ -19,3 +19,14 @@
 .contact-list h3{
     color: red;
 }
+
+@media screen and (max-width:1230px){
+.contact-list{
+    flex-direction: column;
+}
+}
+@media screen and (max-width:420px){
+.contact-list{
+    font-size: 0.7rem;
+}
+}

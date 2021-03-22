@@ -10,3 +10,18 @@
 .work-container .date{
     font-size: 0.8rem;
 }
+@media screen and (max-width:460px){
+    .xyz .Title h3{
+        font-size: 1rem;
+    }
+   .work-container{
+       padding: 1rem 0.6rem;
+       font-size: 0.8rem;
+   }
+   .work-container div{
+        padding: 0.1rem 0.1rem;
+   }
+   .work-container .date{
+       font-size: 0.6rem;
+   }
+}

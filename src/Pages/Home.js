@@ -8,7 +8,7 @@ const Home = () => {
         <div className="Home">
            <header className="main-title">
                <h1 className="main-text">
-                    Hello , I am
+                    <p>Hello , I am</p>
                    <span> Mubasshir Ahmed</span>
                     
                 </h1>

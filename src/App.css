@@ -16,6 +16,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+    background-color: black;
+    /* height: fit-content; */
     /* font-size: 1.2rem; */
 }
 
@@ -24,6 +26,8 @@ body{
     height: 100vh;
     background-color: #191D2B;
     position: fixed;
+    z-index: 11;
+    /* transition: all 0.4s ease-in-out; */
 }
 .main-content{
     width: 80%;
@@ -34,6 +38,7 @@ body{
     background-color: black;
     position: relative;
     display: grid;
+    /* height: fit-content; */
 }
 .content{
     margin: 1rem 2rem;
@@ -97,4 +102,149 @@ body{
 }
 .icon-text{
     font-size: 0.7rem;
+}
+
+@media screen and (max-width:1164px){
+    .main-text{
+    font-size: 1.5rem;
+     }
+     .icons .icons-item{
+        font-size: .7rem;
+    }
+    .icon-text{
+        font-size: 0.2rem;
+    }
+    .icons-lists{
+    padding: 1rem 1rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+    .icons-lists li{
+    padding: 0.5rem 0.6rem;
+}
+.icons-item div a{
+    font-size: 1.3rem;
+}
+}
+@media screen and (max-width:700px){
+    .main-text{
+    font-size: 1.2rem;
+     }
+    .side-bar{
+        transform: translateX(-130%);
+        padding: 1rem 1rem;
+    }
+    .main-content{
+        margin-left: 0;
+        width: 100%;
+    }
+    .icons-item div a{
+    font-size: 1.2rem;
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    .nav-toggle{
+        transform: translateX(0);
+        width: 30%;
+        position: fixed;
+    }
+    .profile{
+        margin-top: 0.1rem;
+    }
+    .profile img{
+       width: 50%;
+       border-radius: 100%;
+       margin-bottom: 0.2rem;
+    }
+    footer p{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:570px){
+    .nav-toggle{
+        width: 40%;
+        
+    }
+}
+
+@media screen and (max-width:500px){
+    .icons-item div a{
+    font-size:0.8rem;
+    }
+    .icons-lists{
+        padding: 0.6rem 0.6rem;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    } 
+    .icons-item div{
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    .icons-lists li{
+        padding: 0.5rem 0rem;
+        border: none;
+    }
+    .main-text{
+        font-size: 1rem;
+    }
+    .home-para{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:450px){
+.nav-toggle{
+        width: 50%;
+    }
+}
+@media screen and (max-width:350px){
+.nav-toggle{
+        width: 50%;
+    }
+    .nav-items{
+        font-size: 0.6rem;
+        margin-bottom: 0.8rem;
+    }
+}
+.nav-btn{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    top:5%;
+    width: 2rem;
+    height: 3rem;
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.lines-1 , .lines-2 , .lines-3{
+    height: .1rem;
+    width: 100%;
+    background-color: blue;
+    pointer-events: none;
+        /* margin-bottom: 0.4rem; */
+
+}
+.lines:not(:last-child){
+    margin-bottom: 0.4rem;
+}
+@media screen and (max-width:700px){
+  .nav-btn{
+      display: block;
+  }
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

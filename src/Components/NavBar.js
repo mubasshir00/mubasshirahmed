@@ -7,10 +7,10 @@ const NavBar = () => {
             <nav className="nav">
                 <div className="profile">
                     <img src={avatar} alt=""/>
-                    <div className="pro-text">
+                    {/* <div className="pro-text">
                         <a href="mubasshir.ahmed@northsouth.edu">mubasshir.ahmed@northsouth.edu</a>
                         <a href="marakib178@gmail.com">marakib178@gmail.com</a>
-                    </div>
+                    </div> */}
                 </div>
                 <ul className="nav-items">
                     <li className="nav-item">

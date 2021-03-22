@@ -3,7 +3,7 @@ import Title from '../Components/Title'
 
 const Work = () => {
     return (
-        <div>
+        <div className="xyz">
             <Title title={'Work Experience'}/>
             <div className="work-container">
                 <ul>

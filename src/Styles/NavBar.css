@@ -1,6 +1,11 @@
 .NavBar{
     height: 100vh;
 }
+.SkillsSection{
+    width: 100%;
+    
+}
+
 .nav {
     height: 100%;
     display: flex;
@@ -8,7 +13,8 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.4rem;
+    
 }
 .profile{
     width: 100%;
@@ -27,7 +33,7 @@
     font-size: inherit;
     display: block;
     color: inherit;
-    padding: 0.5rem 0.3rem;
+    padding: 0.2rem 0.3rem;
     position: relative;
 }
 .nav-item a::before{
@@ -45,7 +51,7 @@
     
 }
 img{
-    width: 70%;
+    width: 60%;
     border-radius: 100%;
     margin-bottom: 1rem;
 }
@@ -55,8 +61,21 @@ footer{
 footer p{
     text-align: center;
     padding: 1rem 0;
+    font-size: 0.5rem;
 }
 .active{
   background-color: #222938;
   border-radius: 10px;
 }
+
+@media screen and (max-width:1164px){
+    .nav-items{
+        font-size: 0.8rem;
+    }
+   
+}
+/* @media screen and (max-width:700px){
+    .nav{
+        transform: translateX(-100%);
+    }
+} */
